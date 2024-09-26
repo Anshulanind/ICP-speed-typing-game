@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "speedtyping_backend": {
+      "main": "src/speedtyping_backend/main.mo",
+      "type": "motoko"
+    },
+    "speedtyping_frontend": {
+      "dependencies": [
+        "speedtyping_backend"
+      ],
+      "source": [
+        "src/speedtyping_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "speedtyping_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
